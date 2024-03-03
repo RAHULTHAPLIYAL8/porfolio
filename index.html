@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RahulPortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(194, 194, 194);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100px;
+            background-color:black;
+            color: #ffffff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            margin-bottom: 100px;
+        }
+
+        .animation {
+            position: relative;
+            height: 10px;
+            top: 100px;
+        }
+        .anime
+        {
+            height:10px;
+            width:100px;
+            background-color:black;
+            animation: sliding 10s infinite;
+            position: relative;
+        }
+        @keyframes sliding {
+            from{
+                left:-200px;
+                top:0px;
+            }
+            to
+            {
+                left:110vw;
+                top:0px;
+            }
+        }
+
+       
+    
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255)
+        }
+
+        nav ul li a:hover {
+            color: white;
+            font-size: 1.04rem;
+        }
+
+        .right {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 170px;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 40%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            position: relative;
+            left: 72px;
+        }
+
+        .rightSection {
+            position: relative;
+            left: 67px;
+        }
+
+        section img {
+            width: 333px;
+        }
+
+        .purple {
+            color: black;
+        }
+
+        #element {
+            color: rgb(0, 0, 0);
+        }
+
+        .secondsection {
+            width: 80vw;
+            margin: auto;
+            height: 100vh;
+        }
+
+        main hr {
+            border: 0px;
+            height: 2px;
+            background-color: black;
+            margin: 40px 84px;
+        }
+
+        .secondsection h1 {
+            font: size 1.9rem;
+        }
+
+        .grey {
+            color: grey;
+
+        }
+
+        .box {
+            background: black;
+            width: 80vw;
+            height: 3px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+
+        .secondsection .verticle {
+            background: rgb(0, 0, 0);
+            width: 2px;
+            height: 50px;
+            margin: 0 100px;
+
+
+        }
+
+        .image-top {
+            position: relative;
+            width: 23px;
+            top: -24px;
+            right: 11px;
+        }
+
+        .verticle-title {
+            width: 200px;
+            position: relative;
+            top: 21px;
+            right: 42px;
+        }
+
+        .verticle-desc {
+            position: relative;
+            top: 23px;
+            right: 35px;
+            font-size: 7px;
+            width: 130px;
+            color: grey;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 30px;
+            /* text-align: center; */
+            /* justify-content: space-around; */
+        }
+
+        footer {
+            background-color: rgb(32, 178, 46);
+            /* height:100px; */
+        }
+
+        footer .www {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .github {
+            padding: 5px;
+            color: white;
+            background: radial-gradient(black, #b1b1b1);
+            border-radius: 5px;
+        }
+
+        .github:hover {
+            padding: 8px;
+            color: white;
+            background: radial-gradient(black, #b1b1b1);
+            border-radius: 5px;
+        }
+
+        .rightSection {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 100px;
+        }
+
+        .rahul {
+            width: 290px;
+            height: 290px;
+            position: relative;
+            top: -120px;
+            left: 50px;
+            border-radius: 180px;
+            border: 2px solid black;
+            box-shadow: 5px 5px 8px 3px black;
+            /* animation-name: rahul;
+    animation-duration:4s;
+    animation-iteration-count: infinite; */
+        }
+
+        @keyframes rahul {
+            from {
+                top: -100px;
+                left: 10px;
+            }
+
+            to {
+                top: -100px;
+                right: 10px;
+            }
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .social {
+            width: 400px;
+            justify-items: center;
+        }
+
+        #s {
+            float: left;
+            margin: 0px 5px;
+            justify-items: center;
+            list-style: none;
+
+        }
+
+        #s a {
+            text-decoration: none;
+            margin: 0px 50px;
+            color: white;
+
+        }
+
+        .fa-linkedin {
+            color: blue;
+        }
+
+        .fa-linkedin:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="right">Rahul Portfolio</div>
+            <div class="left">
+                <ul>
+                    <li> <a href="/">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="./loginform/index.html">Contact</a></li>
+                    <li> <a href="project.html">Project</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="animation">
+          <div class="anime"></div>
+        </div>
+        <section class="firstSection">
+            <div class="leftSection">
+
+                My name is <span class="purple"> RAHUL </span>and i am a coder .
+                <br>
+                <span id="element"></span>
+                <br>
+                <a href="resume.pdf" download=""><button class="github">Resume</button></a>
+                <button class="github">Github</button>
+            </div>
+            <div class="rightSection">
+                <img class="rahul" src="rahulprofile.jpeg" alt="">
+
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="grey">I have work done so far</span>
+            <br>
+            <h> Work experience</h>
+            <div class="box">
+                <div class="verticle">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="verticle-title">HTML</div>
+                    <div class="verticle-desc">I have a experience of more than 4+ years in html language I do my most
+                        of the project by using this skill.I have a good understanding and have a skill to written a
+                        code in a manner way</div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="css.png" alt="">
+                    <div class="verticle-title">Css developer</div>
+                    <div class="verticle-desc">I
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="javascript.png" alt="">
+                    <div class="verticle-title">java developer</div>
+                    <div class="verticle-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                        exercitationem, vero consectetur numquam ad enim nulla earum nobis voluptatibus tempore,
+                        molestias tenetur dolores animi! Fugit illo excepturi nemo consequatur commodi!</div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="cpp.png" alt="">
+                    <div class="verticle-title">Cpp developer</div>
+                    <div class="verticle-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                        exercitationem, vero consectetur numquam ad enim nulla earum nobis voluptatibus tempore,
+                        molestias tenetur dolores animi! Fugit illo excepturi nemo consequatur commodi!</div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="cpp.png" alt="">
+                    <div class="verticle-title">Cpp developer</div>
+                    <div class="verticle-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                        exercitationem, vero consectetur numquam ad enim nulla earum nobis voluptatibus tempore,
+                        molestias tenetur dolores animi! Fugit illo excepturi nemo consequatur commodi!</div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="box">
+                <div class="verticle">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="verticle-title">HTML</div>
+                    <div class="verticle-desc">I have a experience of more than 4+ years in html language I do my most
+                        of the project by using this skill.I have a good understanding and have a skill to written a
+                        code in a manner way</div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="css.png" alt="">
+                    <div class="verticle-title">Css developer</div>
+                    <div class="verticle-desc">I
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="javascript.png" alt="">
+                    <div class="verticle-title">java developer</div>
+                    <div class="verticle-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                        exercitationem, vero consectetur numquam ad enim nulla earum nobis voluptatibus tempore,
+                        molestias tenetur dolores animi! Fugit illo excepturi nemo consequatur commodi!</div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="cpp.png" alt="">
+                    <div class="verticle-title">Cpp developer</div>
+                    <div class="verticle-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                        exercitationem, vero consectetur numquam ad enim nulla earum nobis voluptatibus tempore,
+                        molestias tenetur dolores animi! Fugit illo excepturi nemo consequatur commodi!</div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="cpp.png" alt="">
+                    <div class="verticle-title">Cpp developer</div>
+                    <div class="verticle-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                        exercitationem, vero consectetur numquam ad enim nulla earum nobis voluptatibus tempore,
+                        molestias tenetur dolores animi! Fugit illo excepturi nemo consequatur commodi!</div>
+                </div>
+            </div>
+        </section>
+        <footer>
+
+            <!-- Your website content goes here -->
+
+            <div class="footer">
+                <div class="copyright">
+                    <p>Copyright © RahulPortfolio</p>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li id="s"><a href="#" class="fa fa-linkedin"></a></li>
+                        <li id="s"><a href="#" class="fa fa-github"></a></li>
+                        <li id="s"><a href="#" class="fa fa-instagram"></a> </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Graphic Designer', "Artist", "Animator"],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+
+</html>

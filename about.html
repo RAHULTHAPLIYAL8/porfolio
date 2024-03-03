@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100px;
+            background-color:black;
+            color: #ffffff;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255)
+        }
+
+        nav ul li a:hover {
+            color: white;
+            font-size: 1.04rem;
+        }
+
+        .right {
+            font-size: 1.5rem;
+        }
+        .container
+        {
+            margin-top:30px;
+            display: flex;
+            justify-content: space-around;
+           
+        }
+        .intro
+        {
+            color:white;
+            padding:20px;
+            border:2px solid red;
+            border-radius: 5px;
+        }
+        img
+        {
+            width: 300px;
+            height: 300px;
+            margin-top:60px;
+        filter: brightness(120%);
+         filter: contrast(120%);
+         filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));  /* filter wale css shadown use krne ke liye istemall kri hai */
+         
+        }
+        img:hover
+        {
+        transform: rotate(180deg);
+        ;
+        }
+        p{
+            width: 600px;
+           
+            font-size: 30px;
+        }
+        .container1
+        {
+        
+            margin-top: 100px;
+            width: 80%;
+            margin: auto;
+            padding:10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="right">Rahul Portfolio</div>
+            <div class="left">
+                <ul>
+                    <li> <a href="/">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="../loginform/index.html">Contact</a></li>
+                    <li> <a href="project.html">Project</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <div class="container">
+    <img src="profile.jpeg" alt="">
+    <p class="intro">
+    Hi there👋, I'm a Full Stack Web-Developer,and an 4rt year undergraduate student at Graphic Era Hill University,
+    Dehradun, majoring in computer science and engineering. As a passionate problem solver with in-depth knowledge of
+    data structures and algorithms, I'm always seeking opportunities to apply my skills to real-world challenges.I'm
+    proficient in C++ and have a good understanding of C,and Python.
+    </p>
+    </div>
+    <br>
+    <hr>
+    <div class="container1">
+        <p style="margin-top: 60px;" class="container1">I complete my 10th and 12th CBSE Board From Laxmi public School Delhi with a score of 86.4 % and 84.4% and I also have youtube
+        channel in which I upload my videos or realted to aimation.</p>
+    </div>
+    </main>
+</body>
+
+</html>

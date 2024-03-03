@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./form.css">
+    <title>Form</title>
+</head>
+<style>
+     body {
+            background-color: rgb(194, 194, 194);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100px;
+            background-color: #242421;
+            color: #ffffff;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255)
+        }
+
+        nav ul li a:hover {
+            color: white;
+            font-size: 1.04rem;
+        }
+
+        .right {
+            font-size: 1.5rem;
+        }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="right">Rahul Portfolio</div>
+            <div class="left">
+                <ul>
+                    <li> <a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/loginform/index.html">Contact</a></li>
+                    <li> <a href="../project.html">Project</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="form">
+            <img src="html.png" alt="">
+            <form action="" method="post">
+                <input class="detail" name="name" type="text" placeholder="Enter your name">
+                <br>
+                <input class="detail" name="email" type="email" placeholder="Enter your email">
+                <br>
+                <textarea placeholder="Enter message" name="message" id="textarea" cols="32" rows="10" ></textarea>
+                <br>
+                <input id="submit" type="submit" value="Submit">
+                <br>
+                <br>
+                <br>
+                <b style="color:black;text-align: center;margin-left:43px;">Feel Free to contact me</b>
+                <br>
+                <br>
+            </form>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+
+    </div>
+</body>
+
+</html>
